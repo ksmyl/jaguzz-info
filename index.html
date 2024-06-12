@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <title>Plan Koncertu Widzowie</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
-            background-color: #f8f8f8;
+            background-color: #eaeaea;
             color: #333;
         }
-        h1 {
-            text-align: center;
-            color: #444;
-            font-size: 2em;
-        }
-        .content {
+
+        .container {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -25,47 +23,85 @@
             max-width: 800px;
             margin: 20px auto;
         }
-        .intro {
-            font-style: italic;
+
+        .header {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #444;
+            margin: 0;
+        }
+
+        .header p {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
         .performance {
-            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
         }
+
+        .performance:last-child {
+            border-bottom: none;
+        }
+
         .performance-title {
-            font-weight: bold;
             font-size: 1.2em;
+            font-weight: 700;
+            color: #444;
         }
+
         .details {
-            margin-left: 20px;
+            margin-top: 10px;
         }
+
+        .details p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .number {
+            font-weight: bold;
+            color: #888;
+            margin-right: 10px;
+        }
+
         .break {
             text-align: center;
             font-style: italic;
             margin: 20px 0;
             font-size: 1.2em;
+            color: #444;
         }
-        .number {
-            font-weight: bold;
-            margin-right: 10px;
-        }
+
         .images {
             text-align: center;
             margin-top: 40px;
         }
+
         .images img {
             margin: 10px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: auto;
+            max-width: 100%;
+            height: auto;
         }
+
     </style>
 </head>
 <body>
-    <div class="content">
-        <h1>Spektakl taneczny „PODRÓŻ”</h1>
-        <p class="intro">„Nie to skąd przychodzimy ani dokąd podążamy ale sama droga którą przebywamy liczy się w życiu najbardziej.”</p>
-        
+    <div class="container">
+        <div class="header">
+            <h1>Spektakl taneczny „PODRÓŻ”</h1>
+            <p>„Nie to skąd przychodzimy ani dokąd podążamy ale sama droga którą przebywamy liczy się w życiu najbardziej.”</p>
+        </div>
+
         <div class="performance">
             <span class="number">1.</span><span class="performance-title">„Jak z obrazu Degas”</span>
             <div class="details">
@@ -74,7 +110,7 @@
                 <p>Muzyka: do lekcji baletu klasycznego</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">2.</span><span class="performance-title">„Czułość”</span>
             <div class="details">
@@ -84,7 +120,7 @@
                 <p>Tekst: Olga Tokarczuk czyta Wojciech Leonowicz</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">3.</span><span class="performance-title">“Przebudzenie”</span>
             <div class="details">
@@ -93,7 +129,7 @@
                 <p>Muzyka: Ólafur Arnalds</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">4.</span><span class="performance-title">“La Valse”</span>
             <div class="details">
@@ -102,7 +138,7 @@
                 <p>Muzyka: Maurice Ravel</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">5.</span><span class="performance-title">“Ekstaza”</span>
             <div class="details">
@@ -111,7 +147,7 @@
                 <p>Muzyka: Dominique Fils-Aime</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">6.</span><span class="performance-title">Pokazowa lekcja baletu grupy dorosłej</span>
             <div class="details">
@@ -119,9 +155,9 @@
                 <p>Muzyka: Sting</p>
             </div>
         </div>
-        
+
         <p class="break">PRZERWA 15’</p>
-        
+
         <div class="performance">
             <span class="number">7.</span><span class="performance-title">“Flashbacki”</span>
             <div class="details">
@@ -130,7 +166,7 @@
                 <p>Muzyka: Lipka</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">8.</span><span class="performance-title">“Błękitna fala”</span>
             <div class="details">
@@ -139,7 +175,7 @@
                 <p>Muzyka: Ludovico Einaudi</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">9.</span><span class="performance-title">“Carmen”</span>
             <div class="details">
@@ -148,7 +184,7 @@
                 <p>Muzyka: Georges Bizet</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">10.</span><span class="performance-title">“Historia przesyłki”</span>
             <div class="details">
@@ -157,7 +193,7 @@
                 <p>Muzyka: Paris Paloma</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">11.</span><span class="performance-title">„Zmysłowy krok”</span>
             <div class="details">
@@ -166,7 +202,7 @@
                 <p>Muzyka: Alfred Schnittke</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">12.</span><span class="performance-title">„Jak motyle”</span>
             <div class="details">
@@ -175,7 +211,7 @@
                 <p>Muzyka: Eugen Doga</p>
             </div>
         </div>
-        
+
         <div class="performance">
             <span class="number">13.</span><span class="performance-title">“Moja Podróż”</span>
             <div class="details">
@@ -183,12 +219,6 @@
                 <p>Choreografia: Gosia Lubieniecka</p>
                 <p>Muzyka: collage</p>
             </div>
-        </div>
-
-        <div class="images">
-            <img src="jaguzz.png" alt="Image 1" width="181" height="181">
-            <img src="studio.jpg" alt="Image 2" width="214" height="214">
-            <img src="flex.jpg" alt="Image 3" width="123" height="121">
         </div>
     </div>
 </body>
